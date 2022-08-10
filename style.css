@@ -17,6 +17,11 @@ body {
     grid-template-columns: repeat(3, auto);
 }
 
+.container.x .celula:not(.x):not(.circulo):hover::after,
+.container.x .celula:not(.x):not(.circulo):hover::before {
+    background: rgb(255, 255, 255, 0.3) !important;
+}
+
 .celula {
     width: 100px;
     height: 100px;
@@ -58,7 +63,9 @@ body {
 
 /* X */
 .celula.x::before,
-.celula.x::after {
+.celula.x::after,
+.container.x .celula:not(.x):not(.circulo):hover::after,
+.container.x .celula:not(.x):not(.circulo):hover::before {
     content: "";
     height: calc(100px * 0.15);
     width: calc(100px * 0.9);
@@ -66,11 +73,13 @@ body {
     position: absolute;
 }
 
-.celula.x::before {
+.celula.x::before, 
+.container.x .celula:not(.x):not(.circulo):hover::before {
     transform: rotate(45deg);
 }
 
-.celula.x::after {
+.celula.x::after,
+.container.x .celula:not(.x):not(.circulo):hover::after {
     transform: rotate(-45deg);
 }
 
