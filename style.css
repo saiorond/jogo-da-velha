@@ -27,6 +27,11 @@ body {
     position: relative;
 }
 
+.celula.x,
+.celula.circulo {
+    cursor: not-allowed;
+}
+
 .celula:nth-child(1),
 .celula:nth-child(2),
 .celula:nth-child(3) {
@@ -67,6 +72,17 @@ body {
 
 .celula.x::after {
     transform: rotate(-45deg);
+}
+
+/* circulo */
+.celula.circulo::before,
+.celula.circulo::after {
+    content: "";
+    height: calc(100px * 0.9);
+    width: calc(100px * 0.9);
+    background: whitesmoke;
+    position: absolute;
+    border-radius: 50%;
 }
 
 
