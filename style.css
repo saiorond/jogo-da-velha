@@ -108,7 +108,29 @@ body {
     bottom: 0;
     justify-content: center;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(181, 21, 21, 0.8);
     flex-direction: column;
 }
 
+.mensagem_vencedor_botao {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2.5rem;
+    background-color: rgba(0, 0, 0, 0.755);
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    margin-top: 16px;
+    color: whitesmoke;
+}
+
+.mensagem_vencedor_botao:hover {
+    background-color: whitesmoke;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.mensagem_vencedor_texto {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 5rem;
+    color: whitesmoke;
+}
