@@ -18,7 +18,9 @@ body {
 }
 
 .container.x .celula:not(.x):not(.circulo):hover::after,
-.container.x .celula:not(.x):not(.circulo):hover::before {
+.container.x .celula:not(.x):not(.circulo):hover::before,
+.container.circulo .celula:not(.x):not(.circulo):hover::after,
+.container.circulo .celula:not(.x):not(.circulo):hover::before {
     background: rgb(255, 255, 255, 0.3) !important;
 }
 
@@ -85,7 +87,9 @@ body {
 
 /* circulo */
 .celula.circulo::before,
-.celula.circulo::after {
+.celula.circulo::after,
+.container.circulo .celula:not(.x):not(.circulo):hover::before,
+.container.circulo .celula:not(.x):not(.circulo):hover::after {
     content: "";
     height: calc(100px * 0.9);
     width: calc(100px * 0.9);
@@ -94,9 +98,17 @@ body {
     border-radius: 50%;
 }
 
-
-
 /* Mensagem de vitória */
 .mensagem_vencedor {
-    display: none;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    flex-direction: column;
 }
+
