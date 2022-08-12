@@ -100,7 +100,7 @@ body {
 
 /* Mensagem de vitória */
 .mensagem_vencedor {
-    display: flex;
+    display: none;
     position: fixed;
     top: 0;
     left: 0;
