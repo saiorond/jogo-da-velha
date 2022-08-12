@@ -134,3 +134,7 @@ body {
     font-size: 5rem;
     color: whitesmoke;
 }
+
+.mostrar_mensagem_vencedor {
+    display: flex;   
+}
