@@ -2,7 +2,7 @@ const todasCelulas = document.querySelectorAll("[data-celula]");
 const container = document.querySelector("[data-container]");
 const textoMensagemVencedor = document.querySelector("[data-mensagem-texto]");
 const mensagemVencedor = document.querySelector("[data-mensagem]");
-const reiniciarBotao = document.querySelector("[mensagem_vencedor_botao]");
+const reiniciarBotao = document.querySelector("[data-mensagem_vencedor_botao]");
 
 let marcadoCirculo;
 
@@ -21,14 +21,14 @@ const combinacoesVitoriosas = [
 function iniciarJogo() {
     for (const celula of todasCelulas) {
         celula.classList.remove("circulo");
-        celula.classList.remove9("x");
+        celula.classList.remove("x");
         celula.removeEventListener("click", jogando);
         celula.addEventListener("click", jogando, { once: true});
     }
 
     marcadoCirculo = false;
 
-    container.classList.add("x");
+    containerHover();
     mensagemVencedor.classList.remove("mostrar_mensagem_vencedor");
 }
 
@@ -56,9 +56,7 @@ function marcandoEspaco(celula, adicionandoClasse) {
     celula.classList.add(adicionandoClasse);
 }
 
-function mudandoSimbolo() {
-    marcadoCirculo = !marcadoCirculo;
-
+function containerHover() {
     container.classList.remove("circulo");
     container.classList.remove("x");
 
@@ -67,6 +65,12 @@ function mudandoSimbolo() {
     } else {
         container.classList.add("x");
     }
+}
+
+function mudandoSimbolo() {
+    marcadoCirculo = !marcadoCirculo;
+
+    containerHover()
 };
 
 function jogando(e) {
@@ -87,4 +91,5 @@ function jogando(e) {
 }
 
 iniciarJogo();
-reiniciarBotao.addEventListener("click", iniciarJogo());
+
+reiniciarBotao.addEventListener("click", iniciarJogo);
