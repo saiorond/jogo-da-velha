@@ -52,6 +52,12 @@ function checandoVencedor(jogadorAtual) {
     })
 }
 
+function checandoEmpate() {
+    return [...todasCelulas].every((celula) => {
+       return celula.classList.contains("x") || celula.classList.contains("circulo");
+    })
+}
+
 function marcandoEspaco(celula, adicionandoClasse) {
     celula.classList.add(adicionandoClasse);
 }
@@ -82,14 +88,19 @@ function jogando(e) {
     
     //verificar por vitória
     const venceu = checandoVencedor(adicionandoClasse);
+    
+    //verificar por empate
+    const empatou = checandoEmpate();
+
     if (venceu) {
         fimDeJogo(false);
-    }
-    //verificar por empate
+    } else if (empatou) {
+        fimDeJogo(true)
+    } else {
     //mudar símbolo
     mudandoSimbolo();
+    }
 }
 
 iniciarJogo();
-
 reiniciarBotao.addEventListener("click", iniciarJogo);
