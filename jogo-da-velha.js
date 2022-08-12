@@ -2,6 +2,7 @@ const todasCelulas = document.querySelectorAll("[data-celula]");
 const container = document.querySelector("[data-container]");
 const textoMensagemVencedor = document.querySelector("[data-mensagem-texto]");
 const mensagemVencedor = document.querySelector("[data-mensagem]");
+const reiniciarBotao = document.querySelector("[mensagem_vencedor_botao]");
 
 let marcadoCirculo;
 
@@ -19,12 +20,16 @@ const combinacoesVitoriosas = [
 
 function iniciarJogo() {
     for (const celula of todasCelulas) {
+        celula.classList.remove("circulo");
+        celula.classList.remove9("x");
+        celula.removeEventListener("click", jogando);
         celula.addEventListener("click", jogando, { once: true});
     }
 
     marcadoCirculo = false;
 
     container.classList.add("x");
+    mensagemVencedor.classList.remove("mostrar_mensagem_vencedor");
 }
 
 function fimDeJogo(empate) {
@@ -82,3 +87,4 @@ function jogando(e) {
 }
 
 iniciarJogo();
+reiniciarBotao.addEventListener("click", iniciarJogo());
