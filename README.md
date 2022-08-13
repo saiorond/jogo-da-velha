@@ -6,8 +6,7 @@ A aplicação do jogo da velha é um projeto que possibilitou o treinamento em C
 
 # Descrição do projeto :chart_with_upwards_trend:
 
-## Layout web
-#### Iniando o jogo:
+#### Iniciando o jogo:
 
 ![Web index](https://github.com/saiorond/jogo-da-velha/blob/main/Imagens/screencapture-jogo-da-velha-ruby-vercel-app-2022-08-13-17_07_24.png)
 
