@@ -15,11 +15,11 @@ A aplicação do jogo da velha é um projeto que possibilitou o treinamento em C
 
 ![Web required](https://github.com/saiorond/jogo-da-velha/blob/main/Imagens/screencapture-jogo-da-velha-ruby-vercel-app-2022-08-13-17_07_53.png)
 
-#### Mensagem de vitória do X:
+#### Mensagem de vitória do X :crown::
 
 ![Web required](https://github.com/saiorond/jogo-da-velha/blob/main/Imagens/screencapture-jogo-da-velha-ruby-vercel-app-2022-08-13-17_07_35.png)
 
-#### Mensagem de vitória do O:
+#### Mensagem de vitória do O :crown::
 
 ![Web required](https://github.com/saiorond/jogo-da-velha/blob/main/Imagens/screencapture-jogo-da-velha-ruby-vercel-app-2022-08-13-17_08_10.png)
 
