@@ -1,4 +1,4 @@
-# Jogo da velha :desktop_computer
+# Jogo da velha :desktop_computer:
 
 # Sobre o projeto
 
@@ -25,7 +25,7 @@ A aplicação do jogo da velha é um projeto que possibilitou o treinamento em C
 
 #### Demonstração do jogo:
 
-[Jogo da velha](https://user-images.githubusercontent.com/98855004/184509773-f7c34d1f-96a6-4a1d-ab97-d1fead27dd15.gif)
+![Web required](https://user-images.githubusercontent.com/98855004/184509773-f7c34d1f-96a6-4a1d-ab97-d1fead27dd15.gif)
 
 # Tecnologias utilizadas
 
